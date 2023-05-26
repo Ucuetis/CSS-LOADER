@@ -1,0 +1,158 @@
+.heart {
+  width: 120px;
+  animation: heartBeat 1200ms infinite cubic-bezier(0.23, 0.71, 0.34, 1.04);
+}
+.heart__icon {
+  font-size: 120px;
+}
+
+@keyframes heartBeat {
+  0% {
+    scale: 0.95;
+    color: #9356DC;
+  }
+  7% {
+    scale: 1.1;
+    color: #FF79DA;
+  }
+  33% {
+    scale: 0.9;
+    color: #9356DC;
+  }
+  47% {
+    scale: 1;
+    color: #FF79DA;
+  }
+  66% {
+    scale: 0.95;
+    color: #9356DC;
+  }
+  100% {
+    scale: 0.85;
+    color: #FF79DA;
+  }
+}
+.phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  animation: ringing 800ms infinite cubic-bezier(0.14, -0.4, 0.82, 1.35);
+}
+.phone__icon {
+  font-size: 120px;
+}
+
+@keyframes ringing {
+  0% {
+    scale: 1;
+    rotate: 0deg;
+    color: #9356DC;
+  }
+  25% {
+    rotate: -15deg;
+    color: #FF79DA;
+  }
+  50% {
+    scale: 1.5;
+    rotate: 15deg;
+    color: #9356DC;
+  }
+  75% {
+    rotate: -15deg;
+    color: #FF79DA;
+  }
+  100% {
+    scale: 1;
+    rotate: 0deg;
+    color: #9356DC;
+  }
+}
+.loadBar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+  width: 800px;
+  translate: -50%, -50%;
+  background-color: #99E2D0;
+  border-radius: 15px;
+}
+.loadBar__text {
+  font-size: 30px;
+  color: #008766;
+}
+.loadBar__box {
+  height: 10px;
+  width: 500px;
+  border: 10px solid #9356DC;
+  border-radius: 15px;
+}
+
+.loadBar__box .loadBar__color {
+  background-color: #FF79DA;
+  width: 0px;
+  height: 10px;
+  border-radius: 15px;
+  animation: Loading 4s infinite linear;
+}
+
+@keyframes Loading {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 50%;
+  }
+  50% {
+    width: 75%;
+  }
+  75% {
+    width: 85%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 60px;
+  border-radius: 60px;
+  border: 15px solid #9356DC;
+  background-color: #FF79DA;
+  animation: leftRight 800ms infinite;
+}
+
+@keyframes leftRight {
+  0% {
+    width: 60px;
+    rotate: -180deg;
+  }
+  50% {
+    width: 120px;
+  }
+  100% {
+    width: 60px;
+  }
+}
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+  background-color: #FFFFFF;
+}/*# sourceMappingURL=main.css.map */
